@@ -18,24 +18,34 @@ document.addEventListener('click', (event) => {
     }
 });
 document.getElementById('submit-button').addEventListener('click', function() {
-    // Get the email input value
     const email = document.getElementById('email').value.trim();
+    const emailMessage = document.getElementById('email-message');
 
-    // Validate the email
+    // Clear any previous message
+    emailMessage.innerText = '';
+    emailMessage.classList.remove('success');
+    emailMessage.classList.remove('error');
+    emailMessage.style.display = 'none';
+
     if (!email) {
-        alert('Please enter your email address.');
+        emailMessage.innerText = 'Please enter your email address.';
+        emailMessage.classList.add('error');
+        emailMessage.style.display = 'block';
         return;
     }
 
-    // Check for valid email format
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email)) {
-        alert('Please enter a valid email address.');
+        emailMessage.innerText = 'Please enter a valid email address.';
+        emailMessage.classList.add('error');
+        emailMessage.style.display = 'block';
         return;
     }
 
-    // Display success alert
-    alert('Email submitted successfully!');
+    // Success message
+    emailMessage.innerText = 'Email submitted successfully!';
+    emailMessage.classList.add('success');
+    emailMessage.style.display = 'block';
 
     // Optionally, clear the input field here
     document.getElementById('email').value = '';
