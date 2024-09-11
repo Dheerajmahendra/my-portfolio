@@ -313,7 +313,6 @@ section{
     left: 10px;
     transform: translate(50%,-50%);
 }
-}
 #submit-button{
     margin-top: 10px;
 }
@@ -440,7 +439,7 @@ footer ul li a{
         display: block;
     }
     header{
-        padding: 1rem 5rem;
+        padding: 1rem 4rem;
         gap: 8rem;
         width: 85%;
         height: 55px;
@@ -452,6 +451,7 @@ footer ul li a{
     .section-title{
         font-size: xx-large;
     }
+
     #titleimg{
         width: 60vw;
     }
