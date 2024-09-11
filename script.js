@@ -11,6 +11,12 @@ menuItems.forEach(item => {
         navLinks.classList.remove('active'); // Close the menu when a menu item is clicked
     };
 });
+// Close the menu when clicking outside of it
+document.addEventListener('click', (event) => {
+    if (!navLinks.contains(event.target) && !menuIcon.contains(event.target)) {
+        navLinks.classList.remove('active');
+    }
+});
 document.getElementById('submit-button').addEventListener('click', function() {
     // Get the email input value
     const email = document.getElementById('email').value.trim();
