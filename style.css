@@ -313,6 +313,20 @@ section{
     left: 10px;
     transform: translate(50%,-50%);
 }
+}
+#submit-button{
+    margin-top: 10px;
+}
+.message {
+    color: red; /* You can customize this */
+    font-size: 1rem;
+    display: none; /* Hidden by default */
+    margin-top: 0.5rem;
+}
+
+.message.success {
+    color: green;
+}
 footer{
     bottom: 0;
     left: 0;
