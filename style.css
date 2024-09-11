@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Shadows Into Light';
     text-decoration: none;
     scroll-behavior: smooth;
     list-style: none;
@@ -22,6 +21,7 @@ header{
     padding: 0.5rem 1.5rem;
     border-radius: 3rem;
     z-index: 1000;
+    font-family:'poppins';
 
 }
 
@@ -102,6 +102,9 @@ section{
     justify-content: center;
     gap: 10rem;
 }
+.abt{
+    font-family: "Caveat", cursive;
+}
 .about img{
     width: 30vw;
     border-radius: 50%;
@@ -115,6 +118,7 @@ section{
 .info-box{
     display: flex;
     flex-direction: column;
+    font-family: 'Shadows Into Light';
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -224,7 +228,7 @@ section{
 .grid-card span{
     font-size: 1.5rem;
     font-weight: bold;
-    background: linear-gradient(to right,rgb(173, 106, 25), rgb(0, 157, 225));
+    background: linear-gradient(to right,rgb(63, 58, 52), rgb(0, 157, 225));
     background-clip: text;
     color: transparent;
 }
@@ -395,9 +399,7 @@ footer ul li a{
     } */
 }
 @media(max-width:600px){
-    body {
-        font-family: 'Arial', sans-serif;
-    }
+
     header #menu-icon{
         display: block;
     }
