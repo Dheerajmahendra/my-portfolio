@@ -395,6 +395,9 @@ footer ul li a{
     } */
 }
 @media(max-width:600px){
+    body {
+        font-family: 'Arial', sans-serif;
+    }
     header #menu-icon{
         display: block;
     }
